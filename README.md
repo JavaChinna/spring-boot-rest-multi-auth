@@ -1,5 +1,5 @@
-# spring-boot-disable-security
-Disable Spring Security for a Profile in Spring Boot
+# spring-boot-rest-multi-auth
+Configure Spring Security with Multiple Authentication Providers in a Single Profile
 
 This project is having the following authentication profiles:
 
