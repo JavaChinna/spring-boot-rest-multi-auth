@@ -29,7 +29,7 @@ public class LdapUserAuthoritiesPopulator implements LdapAuthoritiesPopulator {
 		try {
 			authorities = userDetailsService.loadUserByUsername(username).getAuthorities();
 		} catch (Exception e) {
-			log.warn("Unable to fetch the user authorities from the database. Assuming it is an external user, assigning default user role");
+			log.warn("Unable to fetch the user authorities from the database. Hence, assigning default user role");
 			authorities = Arrays.asList(new SimpleGrantedAuthority(Role.ROLE_USER));
 		}
 		return authorities;
